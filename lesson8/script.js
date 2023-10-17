@@ -4,11 +4,10 @@ document.getElementById("title").innerText += "Rat KingZZZ"
 document.getElementById("title").innerText += "BoyZ"
 
 // change HTML
-document.getElementById("title").innerHTML += "<h1>hi</h1><p>Para</p>"
-document.getElementById("title").innerText += "<h1>hi</h1><p>Para</p>"
+// document.getElementById("title").innerText += "<h1>hi</h1><p>Para</p>"
 
 function handleButtonClick() {
-    console.log('button clicked!')
+    document.getElementById("title").innerHTML += "<h1>hi</h1><p>Para</p>"
 }
 
 const dom = {
