@@ -48,6 +48,21 @@ for (i = 1; i < 4; i++) {
 
 // create your own for loop that will repeat 7 times. inside the loop, say what your favorite crypto currency is.
 
-for (i=0; i<5; i++) {
-    document.querySelector(".loopOne").innerHTML += `A`
+// for (i=0; i<5; i++) {
+//     document.querySelector(".loopOne").innerHTML += `📦`
+// }
+
+
+// if number is divisible by 3, print it out
+
+// for (v = 0; v < 10; v++) {
+//     console.log('v is', v)
+//     if (v % 3 == 0) {
+//         console.log(v)
+//         console.log('📦')
+//     }
+// }
+
+for (i = 0; i < 4; i++) {
+    document.querySelector(".loopFour").innerHTML += `📦`
 }
