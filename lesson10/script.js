@@ -16,7 +16,7 @@ while (counter < 10) {
 
 // For loops
 // repeats something x number of times
-for (var i = 0; i < 10; i++) {
+for (i = 0; i < 10; i++) {
     console.log('i is', i)
     console.log('what is down')
 }
@@ -38,7 +38,7 @@ const enemiesCrushed = [
 
 // make a for loop that will print out all the enemies I've crushed.
 
-for (var i = 1; i < 4; i++) {
+for (i = 1; i < 4; i++) {
     console.log(enemiesCrushed[i - 1])
 }
 
@@ -47,3 +47,7 @@ for (var i = 1; i < 4; i++) {
 // 3. create a for loop that prints out those enemies in REVERSE order 
 
 // create your own for loop that will repeat 7 times. inside the loop, say what your favorite crypto currency is.
+
+for (i=0; i<5; i++) {
+    document.querySelector(".loopOne").innerHTML += `A`
+}
