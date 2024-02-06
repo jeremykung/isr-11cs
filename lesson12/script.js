@@ -16,46 +16,46 @@ map()      manipulates and store as new array
 const randomNumbers1 = [2, 5, 1, 4, 3]
 const randomNumbers2 = [2, 5, 1, 7, 8]
 
+// Array.forEach()
 
-randomNumbers1.forEach(function(currentElement) {
+randomNumbers1.forEach((logToConsole))
+
+function logToConsole(currentElement) {
     console.log(currentElement)
-})
+}
 
+function plusOneAndLog(element) {
+    console.log(element + 1)
+}
 
 // 1. Create an array of drinks, use forEach() to log "I like drinking _____" where ____ is each drink in the array
 
 // 2. Using only the forEach() method, create a new array that is only numbers less than 5
 
+// Shorthand for Array.forEach()
+// you can define an "anonymous function" inside as the argument instead of defining it outside and passing it in (see below)
+
+// 3. Create an array of random numbers. For each number in the array, you want to double it. After you double the number, you want to add it to the previous number to find some total. At the end of the forEach() loop, you should have output all the numbers doubled, and the sum of all the doubled numbers.
+// For example: [1,2,3] => 2, 4, 6, and total 12
+// For example: [3,5,2,1] => 6, 10, 4, 2, and total 22
+
+randomNumbers1.push()
+
+num != 7
+
+randomNumbers1(forEach(function(currentElement) {
+    console.log(currentElement)
+}))
 
 
+// Array.filter()
 
+const filteredArray = randomNumbers1.filter(overThree)
+console.log(filteredArray)
 
-// const filteredArray = randomNumbers1.filter(overThree)
-// console.log(filteredArray)
-
-// function overThree(element) {
-//     return element > 3
-// }
-
-
-
-
-// filter the array so that it returns ONLY number 2
-
-
-
-
-
-
-
-
-// for each element in the array, subtract 2 then multiply by 5
-// then log the answer
-
-
-
-
-
+function overThree(element) {
+    return element > 3
+}
 
 
 // const result = randomNumbers1.slice(2, 4)
