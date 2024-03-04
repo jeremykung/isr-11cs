@@ -5,7 +5,8 @@ Array Methods 💪🔥 // functions for arrays
 pop()      removes last element of array
 push()     adds to back of array
 unshift()  adds to the front of array
-slice()    removes element(s) by index
+slice()    removes element(s) by index (returns what was cut out)
+splice()   removes element(s) by index (returns what was left)
 forEach()  does a function for each array
 filter()   filters out elements of array
 map()      manipulates and store as new array
@@ -14,19 +15,37 @@ map()      manipulates and store as new array
 
 // element              0  1  2  3  4
 const randomNumbers1 = [2, 5, 1, 4, 3]
-const randomNumbers2 = [2, 5, 1, 7, 8]
+const randomNumbers2 = [2, 5, 1, 4, 3]
 
+const arr = [1,2,3,4,5]
+
+// randomNumbers1.splice(1, 2)
+// console.log('splice:', randomNumbers1)
+// randomNumbers2.slice(1, 2)
+// console.log('slice:', randomNumbers2)
+
+
+// --------------
+// Array.splice()
+// --------------
+
+// starting from index 2, remove 1 element
+randomNumbers1.splice(2,1) 
+console.log(randomNumbers1)
+
+// ---------------
 // Array.forEach()
+// ---------------
 
-randomNumbers1.forEach((logToConsole))
+// randomNumbers1.forEach((logToConsole))
 
-function logToConsole(currentElement) {
-    console.log(currentElement)
-}
+// function logToConsole(currentElement) {
+//     console.log(currentElement)
+// }
 
-function plusOneAndLog(element) {
-    console.log(element + 1)
-}
+// function plusOneAndLog(element) {
+//     console.log(element + 1)
+// }
 
 // 1. Create an array of drinks, use forEach() to log "I like drinking _____" where ____ is each drink in the array
 
@@ -39,24 +58,28 @@ function plusOneAndLog(element) {
 // For example: [1,2,3] => 2, 4, 6, and total 12
 // For example: [3,5,2,1] => 6, 10, 4, 2, and total 22
 
-randomNumbers1.push()
+// randomNumbers1.push()
 
-num != 7
+// num != 7
 
-randomNumbers1(forEach(function(currentElement) {
-    console.log(currentElement)
-}))
+// randomNumbers1(forEach(function(currentElement) {
+//     console.log(currentElement)
+// }))
 
-
+// --------------
 // Array.filter()
+// --------------
 
-const filteredArray = randomNumbers1.filter(overThree)
-console.log(filteredArray)
+// const filteredArray = randomNumbers1.filter(overThree)
+// console.log(filteredArray)
 
-function overThree(element) {
-    return element > 3
-}
+// function overThree(element) {
+//     return element > 3
+// }
 
+// -------------
+// Array.slice()
+// -------------
 
 // const result = randomNumbers1.slice(2, 4)
 // console.log(result)     // [1, 4]
@@ -67,6 +90,10 @@ function overThree(element) {
 // for example [1,2,3,4,5] => [1,3,5]
 // for example [2,6,2,7,9] => [2,3,9]
 
+
+// -------------------------
+// Array.pop() & Array.push()
+// --------------------------
 
 // function removeOne(theArray) {
 //     const firstPop = theArray.pop()
